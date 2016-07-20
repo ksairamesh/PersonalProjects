@@ -1,0 +1,40 @@
+!SESSION 2016-04-25 16:43:37.682 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/ksairamesh/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/ksairamesh/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2016-04-25 16:43:55.655
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.perforce.team.core 2 0 2016-04-25 16:43:59.749
+!MESSAGE unable to get manifest version attribute: Not running from jar file: bundleresource://434.fwk294202190:1/com/perforce/p4java/Metadata.class
+
+!ENTRY com.perforce.team.core 2 0 2016-04-25 16:43:59.749
+!MESSAGE unable to get manifest date attribute: Not running from jar file: bundleresource://434.fwk294202190:1/com/perforce/p4java/Metadata.class
+
+!ENTRY com.perforce.team.core 1 0 2016-04-25 16:43:59.749
+!MESSAGE P4Java server factory loaded; version: Internal 2010.1 Perforce Development; date: unknown
+
+!ENTRY com.perforce.team.core 1 0 2016-04-25 16:43:59.750
+!MESSAGE Using default charset: UTF-8; JVM charset: UTF-8
+
+!ENTRY com.perforce.team.core 1 0 2016-04-25 16:43:59.751
+!MESSAGE Checking this Java for symbolic link support...
+
+!ENTRY com.perforce.team.core 1 0 2016-04-25 16:43:59.754
+!MESSAGE It seems this Java supports symbolic links.
+
+!ENTRY com.perforce.team.core 1 0 2016-04-25 16:43:59.754
+!MESSAGE Symbolic link support at the OS level will be determined at runtime...
+
+!ENTRY com.perforce.team.core 1 0 2016-04-25 16:43:59.754
+!MESSAGE initializing system file command helper class: java.io.File
+
+!ENTRY com.perforce.team.core 1 0 2016-04-25 16:43:59.754
+!MESSAGE Using default RPC system file command helper: com.perforce.p4java.impl.mapbased.rpc.sys.helper.RpcSystemFileCommandsHelper
+
+!ENTRY com.perforce.team.core 1 0 2016-04-25 16:43:59.754
+!MESSAGE setting RPC system file helper to class com.perforce.team.core.p4java.P4JavaSysFileCommandsHelper
