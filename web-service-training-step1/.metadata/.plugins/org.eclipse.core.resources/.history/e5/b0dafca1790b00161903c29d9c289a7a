@@ -1,0 +1,49 @@
+package com.ksairamesh.devel.outfits.service.repository;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.springframework.stereotype.Repository;
+
+import com.ksairamesh.devel.outfits.entity.Outfit;
+import com.ksairamesh.devel.outfits.repository.OutfitsRepository;
+
+@Repository
+public class repositoryOutfitsService {
+
+	@Resource
+	private OutfitsRepository outfitsRepository;
+
+	@Transactional(readOnly = true)
+	public Outfit getOutfit(Long id)
+	{
+		return outfitsRepository.findOne(id);
+	}
+
+	@Transactional(readOnly = true)
+	public List<Outfit> getOutfits()
+	{
+		return outfitsRepository.findAll();
+	}
+
+	@Transactional
+	public Outfit updateOutfit(Long id, Outfit Outfit)
+	{
+		Outfit currOutfit = outfitsRepository.findOne(id);
+		currOutfit.setValue(Outfit.getValue());
+		return outfitsRepository.save(currOutfit);
+	}
+
+	@Transactional
+	public void deleteOutfit(Long id)
+	{
+		outfitsRepository.deleteById(id);
+	}
+
+	public Outfit addOutfit(Outfit outfit)
+	{
+		outfit.setId(null);
+		return outfitsRepository.save(outfit);
+	}
+}

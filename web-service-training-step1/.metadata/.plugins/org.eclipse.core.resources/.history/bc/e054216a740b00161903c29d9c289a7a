@@ -1,0 +1,14 @@
+package com.ksairamesh.devel.outfits.service;
+
+import com.ksairamesh.devel.outfits.entity.Outfit;
+
+public interface OutfitsService {
+
+		public Outfit getOutfit(Long id);
+		public List<Note> getNotes();
+		public Note addNote(Note note);
+		public Note updateNote(Long id, Note note);
+		public void deleteNote(Long id);
+
+	
+}

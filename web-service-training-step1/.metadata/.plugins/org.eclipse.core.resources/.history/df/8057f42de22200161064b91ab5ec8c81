@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+
+public class FizzBuzz1 {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Enter interger N");
+		Scanner in = new Scanner(System.in);
+		int num = in.nextInt();
+		
+		printFizzBuzz(num);
+
+	}
+	
+	public static void printFizzBuzz(int num){
+		
+		for (int i=1;i<num;i++){
+			if (((i % 3) == 0) && ((i % 5) == 0))  {
+				 System.out.print("fizzbuzz");  
+			}             
+		      else if  ((i % 3) == 0) {
+		    	  System.out.print("fizz"); 
+		      }
+		      else if ((i % 5) == 0) {
+		    	  System.out.print("buzz"); 
+		      }
+		      else {
+		    	  System.out.print(i);  
+		      }                      
+			 System.out.print(" ");  
+		}
+		
+		
+	}
+
+}
